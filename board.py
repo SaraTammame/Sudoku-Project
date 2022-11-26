@@ -70,8 +70,8 @@ class Board:
         pass
 
     def is_full(self):
-        for num in SudokuGenerator.get_board():
-            if num == 0:
+        for num in SudokuGenerator.get_board():  # Uses get_board from SudokuGenerator to check if a cell has a value
+            if num == 0:  # cell value is 0 if empty
                 return False
         return True
 
