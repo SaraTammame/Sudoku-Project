@@ -73,7 +73,7 @@ class Board:
         for num in SudokuGenerator.get_board():  # Uses get_board from SudokuGenerator to check if a cell has a value
             if num == 0:  # cell value is 0 if empty
                 return False
-        return True  # returns true if no cell has a value of 0
+        return True  # returns true if all cells have value other than 0
 
     def update_board(self):
         pass
