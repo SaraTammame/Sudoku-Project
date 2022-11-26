@@ -1,6 +1,6 @@
 # import pygame
 from constants import *
-
+from sudoku_generator import SudokuGenerator
 
 class Board:
     def __init__(self, width, height, screen, difficulty):
@@ -70,7 +70,10 @@ class Board:
         pass
 
     def is_full(self):
-        pass
+        for num in SudokuGenerator.get_board():
+            if num == 0:
+                return False
+        return True
 
     def update_board(self):
         pass
